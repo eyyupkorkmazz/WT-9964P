@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/assets/bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="assets/icons/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>WT-9964P-Home</title>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary shadow">
+      <div class="container px-5">
+        <a class="navbar-brand f-kanit fw-bolder" href="#">Start Bootstrap</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="nav-menu">Menu</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto pe-5">
+            <li>
+              <a class="nav-link active" href="#feature">Features</a>
+            </li>
+            <li>
+              <a class="nav-link active" href="#appbadge">Download</a>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="btn btn-primary btn-size rounded-5 mt-3 mb-3"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <i class="bi bi-chat-text-fill"></i>
+            Send Feedback
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header p-3 bg-gradient-color">
+            <h1
+              class="modal-title fs-5 p-3 f-kanit text-white"
+              id="exampleModalLabel"
+            >
+              Send feedback
+            </h1>
+            <button
+              type="button"
+              class="btn-close pe-4 btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form
+              action="https://formsubmit.co/eyyupkorkmazpr@gmail.com"
+              method="POST"
+            >
+              <div class="form-floating mb-1 p-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="full_name"
+                  name="full_name"
+                  placeholder="Enter your name"
+                />
+                <label class="m-2" for="full_name">Adınız Soyadınız</label>
+              </div>
+
+              <div class="form-floating mb-1 p-2">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="name@example.com"
+                />
+                <label class="m-2" for="email">Email adres</label>
+              </div>
+              <div class="form-floating mb-1 p-2">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="tel_number"
+                  name="tel_number"
+                  placeholder="(123) 456-7890"
+                />
+                <label class="m-2" for="tel_number">Telefon Numarası</label>
+              </div>
+              <div class="form-floating mb-1 p-2">
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="text-area"
+                  name="text-area"
+                  style="height: 100px"
+                ></textarea>
+                <label class="m-2" for="text-area">Mesajınız</label>
+              </div>
+              <div class="form-floating mb-1 p-2">
+                <button class="btn btn-primary btn-form btn-lg" type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile link Section -->
+    <div class="container mt-5 pt-5">
+      <div class="row mt-5 pt-5 pb-5">
+        <div class="col-lg-6">
+          <h1 class="h1-fonts text-center">
+            Forge Your Legacy, Dominate the Battlefield
+          </h1>
+          <p class="fs-3 text-center text-black-50">
+            Unite with allies, unleash your power, and conquer a world where
+            legends are born.
+          </p>
+          <div class="d-flex flex-column flex-lg-row align-items-center">
+            <a class="me-lg-3 mb-4 mb-lg-0" href="/">
+              <img src="/assets/images/app-store-badge.svg" alt="" />
+            </a>
+
+            <a href="/">
+              <img
+                src="/assets/images/google-play-badge.svg"
+                width="135"
+                height="40"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mobile-phone mt-5">
+            <div class="circle">
+              <div class="phone">
+                <img
+                  class="img-fluid"
+                  src="/assets/images/portrait_black(1).png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reference Section -->
+    <div class="refe-section mt-5 pt-5 pb-5 text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <h2 class="fs-1 text-white text-center p-3">
+              A seamless solution to relive the adventure we all love, perfectly
+              crafted in one game!
+            </h2>
+            <img
+              src="/assets/images/logo.webp"
+              alt="tnw-logo"
+              style="height: 6rem"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature Section -->
+    <div id="feature" class="feature bg-white mt-5 pt-5 pb-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 d-flex justify-content-center text-center">
+                  <div>
+                    <i class="bi bi-backpack4 icon-gradient"></i>
+                    <div class="container pe-5 ps-5 pt-2">
+                      <h4 class="fw-bolder">Power Loot</h4>
+                      <p class="text-black-50 pe-5 ps-5">
+                        Fill your bag with powerful items via the website or
+                        in-game.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center text-center">
+                  <div class="div">
+                    <i class="bi bi-bookmark-star icon-gradient"></i>
+                    <div class="container pe-5 ps-5 pt-2">
+                      <h4 class="fw-bolder">Stay Informed</h4>
+                      <p class="text-black-50 pe-5 ps-5">
+                        Never miss important information!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 d-flex justify-content-center text-center">
+                  <div class="div">
+                    <i class="bi bi-gift icon-gradient"></i>
+                    <div class="container pe-5 ps-5 pt-2">
+                      <h4 class="fw-bolder">Free to Use</h4>
+                      <p class="text-black-50 pe-5 ps-5">
+                        Enjoy unlimited access to features and tools, completely
+                        free of charge for all users.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center text-center">
+                  <div class="div">
+                    <i class="bi bi bi-bug icon-gradient"></i>
+                    <div class="container pe-5 ps-5 pt-2">
+                      <h4 class="fw-bolder">Cheat Protection</h4>
+                      <p class="text-black-50 pe-5 ps-5">
+                        Ensuring fair gameplay with robust cheat detection and
+                        prevention for a secure gaming experience.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 order-lg-0">
+            <div class="features-device">
+              <div class="circle-2">
+                <div class="phone-2">
+                  <img
+                    src="/assets/images/portrait_black(1).png"
+                    alt=""
+                    width="80%"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- information Section -->
+    <section class="information bg-inf">
+      <div class="container">
+        <div class="row justify-content-center align-items-center p-4">
+          <div class="col-12 col-lg-5">
+            <h2 class="h2-inf mb-4">Embark on an Epic MMORPG Adventure</h2>
+            <p class="fs-4 text-muted mb-5">
+              Dive into a world of limitless possibilities, where battles are
+              fierce, alliances shape destinies, and heroes are forged.
+              Adventure, strategy, and camaraderie await—are you ready to claim
+              your legacy?
+            </p>
+          </div>
+          <div class="col-sm-8 col-md-6 text-center mb-5">
+            <img
+              class="img-fluid rounded-circle"
+              src="/assets/images/warrior.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- dwn Section -->
+    <section class="dwn-sec">
+      <div class="dwn-content ps-4">
+        <div class="container px-5">
+          <h2 class="text-white h2-dwn pb-4">
+            Stop waiting. <br />
+            War awaits you.
+          </h2>
+          <a class="btn btn-outline-light rounded-pill p-3 px-4" href="#"
+            >Download for free</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- app badge Section -->
+    <section id="appbadge" class="app-section">
+      <div class="container text-center pt-5 pb-5">
+        <h2 class="text-white f-kanit">Get the app now!</h2>
+        <div
+          class="d-flex flex-column flex-lg-row align-items-center justify-content-center"
+        >
+          <a class="googleplay me-lg-3 mb-4 mb-lg-0" href="#"
+            ><img
+              width="170px"
+              src="/assets/images/google-play-badge.svg"
+              alt="googleplay"
+          /></a>
+
+          <a class="applestore" href="#"
+            ><img
+              width="170px"
+              src="/assets/images/app-store-badge.svg"
+              alt="iosstore"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer Section -->
+    <footer class="bg-black text-center py-5">
+      <div class="container">
+        <div class="text-white-50 small">
+          <div class="mb-2">© Eyyüp Korkmaz. All Rights Reserved.</div>
+          <a class="footer-link" href="#">Privacy</a>
+          <span class="pe-1 ps-1">.</span>
+          <a class="footer-link" href="#">Terms</a>
+          <span class="pe-1 ps-1">.</span>
+          <a class="footer-link" href="#">FAQ</a>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/bootstrap/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

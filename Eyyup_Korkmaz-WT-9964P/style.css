@@ -1,0 +1,226 @@
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.f-kanit {
+  font-family: "Kanit";
+}
+
+.navbar-toggler {
+  padding: 11px;
+  font-size: 10px;
+  color: black;
+}
+
+.nav-menu {
+  position: relative;
+  top: 5px;
+  font-size: 14px;
+  padding: 2px;
+}
+
+.btn-size {
+  width: 180px;
+}
+
+.btn-form {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+.h1-fonts {
+  font-size: 4rem;
+}
+
+.bg-gradient-color {
+  background: linear-gradient(to right, #3a33ee 0%, #9d1ae2 100%);
+}
+
+.mobile-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.phone {
+  max-width: 60%;
+}
+
+.circle {
+  content: "";
+  width: 375px;
+  height: 375px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 54, 212, 1) 0%,
+    rgba(255, 0, 221, 1) 56%
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.circle::after {
+  content: "a";
+  position: absolute;
+  color: #9e1ae2;
+  font-size: 28px;
+  right: 0;
+  top: 0;
+  transform: rotate(-30deg);
+}
+.circle::before {
+  content: "x";
+  position: absolute;
+  color: #2937f0;
+  font-size: 28px;
+  bottom: 0;
+  left: 0;
+  transform: rotate(30deg);
+}
+
+.refe-section {
+  background: linear-gradient(to top right, #00ff37 0%, #2600ff 100%);
+}
+
+.features-device {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.phone-2 {
+  max-width: 100%;
+  margin-left: 50px;
+}
+
+.circle-2 {
+  content: "";
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(to top right, #2937f0 0%, #9e1ae2 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle-2::after {
+  content: "x";
+  position: absolute;
+  color: #9e1ae2;
+  font-size: 28px;
+  right: 0;
+  top: 0;
+  margin-left: -50px;
+  transform: rotate(30deg);
+}
+.circle-2::before {
+  content: "a";
+  position: absolute;
+  color: #2937f0;
+  font-size: 24px;
+  bottom: 0;
+  left: 0;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 576px) {
+  .circle,
+  .circle-2 {
+    background: none;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .circle::after,
+  .circle::before,
+  .circle-2::after,
+  .circle-2::before {
+    display: none;
+  }
+  .phone {
+    text-align: center;
+  }
+  .phone-2 {
+    text-align: center;
+  }
+  .phone img {
+    width: 80%;
+    display: inline-block;
+  }
+  .phone-2 img {
+    width: 70%;
+    display: inline-block;
+    margin: 0;
+    padding-right: 35px;
+  }
+}
+
+/* Metnin içine background rengini ekledim */
+.icon-gradient {
+  font-size: 70px;
+  background: linear-gradient(to bottom right, #2937f0, #9e1ae2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bg-inf {
+  background-color: #f8f9fa;
+}
+
+.h2-inf {
+  font-size: 38px;
+}
+
+section.dwn-sec::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.7);
+}
+
+.dwn-sec {
+  position: relative;
+  padding: 15rem 0;
+  background-image: url(/assets/images/background.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+section.dwn-sec .dwn-content {
+  position: relative;
+  z-index: 1;
+}
+
+.h2-dwn {
+  font-size: 4rem;
+}
+
+.app-section {
+  background: linear-gradient(to top right, #2937f0 0%, #9e1ae2 100%);
+}
+
+a.footer-link:link,
+.footer-link:visited {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
